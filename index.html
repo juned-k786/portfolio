@@ -1,111 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohd Juned Khan - Portfolio</title>
-    <link rel="stylesheet" href="2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="document.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <title>Built by Juned | Developer & Creator  </title>
+  <meta name="description" content="Built by Juned | Developer & Creator  " />
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="nav-content">
-            <div class="logo">MJK</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="social-buttons">
-                <a href="https://www.instagram.com/_shadow_juned_khan" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/juned-k786" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/mohd-juned-khan-126487252/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/juned_708" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
+  <header class="main-header">
+    <div class="main-header__logo-container">
+      <div class="main-header__logo-img-cont">
+        <img
+          src="assets/dp.png"
+          alt="logo Image" class="main-header__logo-img" />
+      </div>
+      <h4 class="main-header__logo-text">Mohd Juned Khan</h4>
+    </div>
+    <nav class="main-header__navigation">
+      <ul class="main-header__navigation-links">
+        <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
+        <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
+        <li class="main-header__navigation-link">
+          <a href="./index.html#projects"> Projects </a>
+        </li>
+        <li class="main-header__navigation-link"><a href="./index.html#certifications"> Certifications </a></li>
+        <li class="main-header__navigation-link"><a href="./index.html#contact" href=""> Contact </a></li>
+      </ul>
     </nav>
+    <div class="main-header__sm-scr-nav-btn">
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+    </div>
+    <div class="main-header__sm-menu">
+      <div class="main-header__sm-menu-close">
 
-    <header id="home">
-        <div class="header-content">
-            <h1 class="glitch" data-text="Mohd Juned Khan">Mohd Juned Khan</h1>
-            <p class="subtitle">Data Scientist | Developer | Innovator</p>
-            <a href="junedcv (4).pdf" class="btn" download>Download Resume</a>
+      </div>
+      <ul class="main-header__sm-menu-links">
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--1" name="home-hero">Home</a>
+        </li>
+
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--2" name="about">About</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="projects">Projects</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--4" name="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <button class="btn btn-theme btn-sm">Download CV</button> -->
+  </header>
+
+  <!--Remove or Comment out this theme selector code when you are done with choosing the right color for your theme so this color selector don't appear when you host the site online-->
+  <div class="themeClrSelector">
+    <input placeholder="Color Selector" type="color" value="#1DA1F2" class="themeClrSelector__input" />
+    <img alt="theme color tester" src="https://img.icons8.com/fluent/48/000000/rgb-circle-1.png"
+      class="themeClrSelector__img" />
+  </div>
+  <!---->
+
+  <section id="home-hero" class="home-hero">
+    <div class="home-hero__content">
+      <div class="home-hero__info">
+        <h1 class="heading-primary home-hero__heading-primary">
+          <span class="heading-primary__sm"> Hello 👋</span>
+          <span class="heading-primary__main">
+            I'm Mohd Juned Khan — merging Web Development with Data Science to build intelligent, modern digital solutions.
+          </span>
+        </h1>
+        <a href="./index.html#projects">
+        <button class="btn btn-theme home-hero__btn-theme">Projects</button>
+        </a>
+        <button class="btn btn-inv home-hero__btn-theme">Contact</button>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm"> About 🦄</span>
+        <span class="heading-secondary__main">
+          Here you will find more information about me, what I do, and list of my current skills in programming
+      </h2>
+      <div class="main-section__content">
+        <div class="about__info">
+          <div class="about__main-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              My Story
+            </h3>
+            <p class="text-primary about__text-primary">
+              <span>
+                <span>
+                I craft responsive, high-performance web applications that deliver seamless user experiences across devices.
+                </span>
+                <span>
+                I also explore the power of data — building models, analyzing trends, and solving problems using machine learning and statistics.
+                </span>
+                <span>
+                Whether it's writing clean frontend code or generating insights from complex datasets, I enjoy every part of the journey.
+                </span>
+                <span>
+                My mission is to bridge the gap between web development and data science to create smarter digital solutions for the future.
+                </span>
+            </p>
+            <a href="assets/JUNEDGEN.pdf" download>
+              <button class="btn btn-theme about__btn-theme">Download Resume</button>
+            </a>
+            
+          </div>
+          <div class="about__skill-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              My Skills
+            </h3>
+            <ul class="about__skills">
+              <ul class="about__skills-list">
+                <li class="about__skill skill-cplusplus">C/C++</li>
+                <li class="about__skill skill-java">Java</li>
+                <li class="about__skill skill-html">HTML</li>
+                <li class="about__skill skill-css">CSS</li>
+                <li class="about__skill skill-javascript">JavaScript</li>
+                <li class="about__skill skill-python">Python</li>
+                <li class="about__skill skill-r">R</li>
+                <li class="about__skill skill-sql">SQL</li>
+                <li class="about__skill skill-git">Git</li>
+                <li class="about__skill skill-tableau">Tableau</li>
+                <li class="about__skill skill-rstudio">R-Studio</li>
+                <li class="about__skill skill-excel">MS-Excel</li>
+              </ul>
+              
+            </ul>
+          </div>
         </div>
-    </header>
-
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I'm Mohd Juned Khan, a passionate data scientist dedicated to uncovering stories behind data. I transform intricate datasets into narratives that guide impactful decisions. With experience in predictive modeling and data analysis, I strive to innovate and push the boundaries of what's possible with data.</p>
-    </section>
-
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skill-container">
-            <div class="skill-item"><i class="fas fa-code"></i><span>R Programming</span></div>
-            <div class="skill-item"><i class="fas fa-chart-bar"></i><span>Tableau</span></div>
-            <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
-            <div class="skill-item"><i class="fas fa-terminal"></i><span>C</span></div>
-            <div class="skill-item"><i class="fas fa-code"></i><span>C++</span></div>
-            <div class="skill-item"><i class="fab fa-java"></i><span>Java</span></div>
-            <div class="skill-item"><i class="fab fa-html5"></i><span>HTML</span></div>
-            <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
-            <div class="skill-item"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-item">
-                <h3>Predictive Analytics for E-commerce</h3>
-                <p>Developed a predictive model using Python and Machine Learning to forecast sales trends for an e-commerce company, resulting in a 15% increase in revenue.</p>
-                <div class="project-links">
-                    <a href="#" class="btn">View Project</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills-showcase">
+    <div class="skills-showcase__container">
+      <ul class="skills-showcase__list">
+        <!-- Skill List Items (with Icons Only) -->
+        <li class="skills-showcase__list-item">
+          <i class="devicon-vscode-plain"></i>
+        </li>
+        <li class="skills-showcase__list-item">
+          <i class="devicon-cplusplus-plain"></i>
+        </li>
+        <li class="skills-showcase__list-item">
+          <i class="devicon-java-plain"></i>
+        </li>
+        <li class="skills-showcase__list-item">
+          <i class="devicon-oracle-original"></i>
+        </li>
+        <li class="skills-showcase__list-item">
+          <i class="devicon-tableau-plain"></i>
+        </li>
+        <li class="skills-showcase__list-item">
+          <i class="devicon-r-plain"></i>
+        </li>
+        <li class="skills-showcase__list-item">
+          <i class="devicon-microsoftexcel-plain"></i>
+        </li>
+        <li class="skills-showcase__list-item">
+          <i class="devicon-cplusplus-plain"></i>
+        </li>
+        <li class="skills-showcase__list-item">
+          <i class="devicon-java-plain"></i>
+        </li>
+        <li class="skills-showcase__list-item">
+          <i class="devicon-html5-plain"></i>
+        </li>
+        <li class="skills-showcase__list-item">
+          <i class="devicon-css3-plain"></i>
+        </li>
+        <li class="skills-showcase__list-item">
+          <i class="devicon-javascript-plain"></i>
+        </li>
+        <li class="skills-showcase__list-item">
+          <i class="devicon-python-plain"></i>
+        </li>
+        <li class="skills-showcase__list-item">
+          <i class="devicon-r-plain"></i>
+        </li>
+        <li class="skills-showcase__list-item">
+          <i class="devicon-sql-plain"></i>
+        </li>
+        <li class="skills-showcase__list-item">
+          <i class="devicon-git-plain"></i>
+        </li>
+        <li class="skills-showcase__list-item">
+          <i class="devicon-github-original"></i>
+        </li>
+      </ul>
+    </div>
+    
+    </ul>
+  </section>
+  <section id="projects" class="projects main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm"> Projects 🛠️</span>
+        <span class="heading-secondary__main">
+          Here you'll find some of the personal projects I've built with passion and precision. If you like what you see, feel free to reach out — I'm open for opportunities and collaborations!
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="projects__list">
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 1 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
             </div>
-            <div class="project-item">
-                <h3>Data Visualization Dashboard</h3>
-                <p>Created a dynamic Tableau dashboard for visualizing key performance indicators, enhancing data-driven decision-making for a finance team and reducing report generation time by 40%.</p>
-                <div class="project-links">
-                    <a href="#" class="btn">View Project</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/HMS.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+              Health_Monitering_system
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  The Health Monitoring System is a scalable platform designed for diagnostic centers to analyze critical health metrics like blood pressure, sugar level, cholesterol, and hemoglobin. It processes synthetic data for 10,000+ patients using Apache Spark and Pandas, identifying trends and high-risk individuals through statistical analysis.
+                </span>
+                <br /><br />
+                <span>
+                  The system includes data visualization tools to uncover patterns and correlations in health data, making it suitable for real-world integration. Its modular design and big data capabilities make it a strong candidate for future enhancements like ML-based disease prediction and real-time monitoring.
+                </span>
+                
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <a href="https://github.com/juned-k786/Health_Monitering_system" target="_blank" rel="noopener noreferrer">
+                <button class="btn btn-inv projects__btn-inv">Code Link</button>
+              </a>
+              
             </div>
-        </div>
-    </section>
+          </div>
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/heart.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Heart Disease Prediction 
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
 
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>If you would like to connect or have any questions, feel free to reach out!</p>
-        <form id="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:mjkjunedkhan@gmail.com">mjkjunedkhan@gmail.com</a></p>
-            <p>Phone: +91-7080286619</p>
-        </div>
-    </section>
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Heart Disease Prediction is a machine learning-powered web app that forecasts the likelihood of heart disease based on user inputs like age, chest pain type, and maximum heart rate. It combines a logistic regression model with a simple UI to deliver fast, reliable results.
+                </span>
+                <br /><br />
+                <span>
+                  The app features a responsive design, real-time predictions, and error handling, making it accessible and user-friendly. Built with Flask, HTML/CSS, and Scikit-learn, it's ideal for educational purposes or early-stage health diagnostics through web technology.
+                </span>
+                
+              </p>
+              <a href="https://heartdisease-pwnu.onrender.com/" target="_blank" rel="noopener noreferrer">
+                <button class="btn btn-theme projects__btn-theme">Live Link</button>
+              </a>
+              
+              <a href="https://github.com/juned-k786/HeartDisease-Detection-ML" target="_blank" rel="noopener noreferrer">
+                <button class="btn btn-inv projects__btn-inv">Code Link</button>
+              </a>
+              
+            </div>
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 2 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+          </div>
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 3 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/Dashboard.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                COVID-19-Data-Dashboard-and-Analysis
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
 
-    <footer>
-        <div class="social-buttons">
-            <a href="https://www.instagram.com/_shadow_juned_khan" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/juned-k786" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/mohd-juned-khan-126487252/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://x.com/juned_708" target="_blank"><i class="fab fa-twitter"></i></a>
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  COVID-19 Dashboard is a comprehensive data visualization project built with Tableau that provides real-time insights into global and regional COVID-19 trends. It displays key metrics like confirmed cases, recoveries, deaths, and vaccination progress with interactive filters for date, geography, and demographics.
+                </span>
+                <br /><br />
+                <span>
+                  The dashboard uses live data sources such as the Johns Hopkins University dataset and WHO reports. Designed to be both informative and user-friendly, it supports drill-down capabilities and trend analysis to better understand the pandemic's impact worldwide.
+                </span>
+                
+              </p>
+              <a href="https://public.tableau.com/app/profile/mohd.juned.khan/viz/Project_17368763281330/Dashboard" target="_blank" rel="noopener noreferrer">
+                <button class="btn btn-theme projects__btn-theme">Live Link</button>
+              </a>
+              
+              <a href="https://github.com/juned-k786/COVID-19-Data-Dashboard-and-Analysis" target="_blank" rel="noopener noreferrer">
+                <button class="btn btn-inv projects__btn-inv">Code Link</button>
+              </a>
+              
+            </div>
+          </div>
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/Rmodel.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Loan Approval Prediction and Model Comparison
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Loan Approval Prediction and Model Comparison is a project built with R in R-Studio using multiple machine learning algorithms (KNN, Naïve Bayes, SVM, Random Forest, K-means) to analyze and classify loan approval data. 
+                  The project is designed to predict loan approval status based on various input features such as applicant income, credit score, and employment status.
+                </span>
+                <!-- <br />
+                  <br /> -->
+                <span>
+                  Developed an interactive Shiny application to compare the performance of these models, visualize results, and enhance user understanding through intuitive dashboards. 
+                  The app allows users to interact with the models and gain insights into the loan approval process.
+                </span>
+                
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+                <button class="btn btn-inv projects__btn-inv">
+                  <a href="https://github.com/juned-k786/Loan-Approval-Prediction-and-Model-Comparison" target="_blank">
+                    Code Link
+                  </a>
+                </button>
+            </div>
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 4 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+          </div>
         </div>
-        <p>&copy; 2024 Mohd Juned Khan. All rights reserved.</p>
-    </footer>
+      </div>
+    </div>
+  </section>
+  
+  <section id="certifications" class="certifications main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary">
+        <span class="heading-secondary__sm"> Certifications 🏆</span>
+        <span class="heading-secondary__main">
+          "Each certification showcases my proficiency in key areas and reinforces my dedication to mastering industry-relevant skills."
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="certification-item">
+          <img src="./assets/IITKN.png" alt="Certification Image" class="certification-img">
+          <div class="certification-details">
+            <h3> Cloud Computing</h3>
+            <p>Issued by: IIT-Kharagpur, NPTEL</p>
+            <p>Date: July 2024</p>
+            <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL24CS118S167020163204431637" target="_blank">View Certificate</a>
+          </div>
+        </div>
+        <div class="main-section__content">
+          <div class="certification-item">
+            <img src="./assets/sales1.png" alt="Certification Image" class="certification-img">
+            <div class="certification-details">
+              <h3> Data Analysis with Tableau</h3>
+              <p>Issued by: Salesforce, Coursera</p>
+              <p>Date: October 2024</p>
+              <a href="https://www.coursera.org/account/accomplishments/certificate/NVI7G3IUJZGZ" target="_blank">View Certificate</a>
+            </div>
+          </div>
+          <div class="main-section__content">
+            <div class="certification-item">
+              <img src="./assets/stn.png" alt="Certification Image" class="certification-img">
+              <div class="certification-details">
+                <h3> Supervised Machine Learning</h3>
+                <p>Issued by: Stanford University, Coursera</p>
+                <p>Date: November 2024</p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/KKZPF7Y2F9SK" target="_blank">View Certificate</a>
+              </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary">
+        <span class="heading-secondary__sm"> Contact 📞</span>
+        <span class="heading-secondary__main">
+          Feel free to Contact me by submitting the form below and I will get back to you as soon as possible
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="contact__form-cont">
+          <form class="contact__form">
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Name</label>
+              <input placeholder="Enter Your Name" type="text" class="contact__form-field-input" />
+            </div>
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Email</label>
+              <input placeholder="Enter Your Email" type="text" class="contact__form-field-input" />
+            </div>
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Message</label>
+              <textarea placeholder="Enter Your Message" name="message" id="" cols="30" rows="10"
+                class="contact__form-field-input"></textarea>
+            </div>
+            <button type="submit" class="contact__form-submit">Submit</button>
+          </form>
+          <div class="contact__form-visual"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <div class="main-footer__upper">
+      <div class="main-container">
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#about">About</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#projects">Projects</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="main-footer__mid-line"></div>
+        <div class="main-footer__socials">
+          <a href="https://github.com/juned-k786" class="main-footer__social-link">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
+              alt="GitHub"
+              class="main-footer__social-link-icon" />
+          </a>
+          <a href="https://www.instagram.com/_shadow_juned_khan/profilecard/?igsh=ZjhkcWh4dnRqdThj" class="main-footer__social-link">
+            <img src="./assets/icons8-instagram-48.png" alt="Instagram" class="main-footer__social-link-icon" />
+          </a>
+          <a href="https://twitter.com/your-username" class="main-footer__social-link">
+            <img src="./assets/icons8-twitter-50.png" alt="Twitter" class="main-footer__social-link-icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/mohd-juned-khan/" class="main-footer__social-link">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
+              alt="LinkedIn"
+              class="main-footer__social-link-icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main-footer__bottom">
+      <div class="main-container">
+        <p class="main-footer__bottom-txt">
+          <!-- If you can give me some credits or shoutout here by linking to my website, then that will help me a lot :) -->
+          <a target="_blank" href="https://github.com/rammcodes/wowfolio"></a>
+          <script>document.write(new Date().getFullYear())</script>. Made by
+          <a target="_blank" href="https://rammaheshwari.com">Mohd Juned Khan</a>
+        </p>
+      </div>
+    </div>
+  <script src="./script.js"></script>
 </body>
+
 </html>
